@@ -1,0 +1,24 @@
+topic,figure,exists
+Raw signals / example windows,A03_raw_signals.png,True
+Raw signals / example windows,A09_example_windows.png,True
+Raw signals / example windows,A09_class_comparison.png,True
+Training and confusion (Phase B),B20_training_curves.png,True
+Training and confusion (Phase B),B21_confusion_matrix.png,True
+Uncertainty distributions and threshold,B26_known_vs_unseen_scores.png,True
+Uncertainty distributions and threshold,B27_threshold_selection.png,True
+Uncertainty distributions and threshold,Bplus_logit_margin_groups.png,True
+Aggregation and load sensitivity,Bplus_multiwindow_aggregation.png,True
+Aggregation and load sensitivity,Bplus_confusion_2hp.png,True
+Aggregation and load sensitivity,C31b_2hp_robustness.png,True
+Physics layer,C28a_accel_to_velocity.png,True
+Physics layer,C28b_velocity_rms_by_class.png,True
+Physics layer,C28d_iso_zone_mapping.png,True
+Physics layer,C29b_capacity_function.png,True
+Physics layer,C29c_sensitivity_heatmaps.png,True
+Physics layer,C31a_function_tests.png,True
+Physics layer,C31c_fault_injection_sweep.png,True
+"Robustness (seeds, ensemble)",R_multiseed_spread.png,True
+"Robustness (seeds, ensemble)",R_per_class_unseen_by_seed.png,True
+"Robustness (seeds, ensemble)",R_ensemble_vs_single.png,True
+Final results (Phase D),D4_final_comparison_plots.png,True
+Final results (Phase D),D5_confusion_before_after.png,True

@@ -1,0 +1,10 @@
+{
+  "method": "95% acceptance on known validation set",
+  "tau_confidence": 0.9998025298118591,
+  "tau_entropy": 0.0011129304811542868,
+  "reference_youden_tau_confidence": 0.9997973442077637,
+  "reference_youden_tau_entropy": 0.001097369526841968,
+  "auroc_confidence": 0.9940876588983051,
+  "auroc_entropy": 0.9943524894067797,
+  "test_accuracy_known": 1.0
+}

@@ -1,0 +1,5 @@
+Policy,Known 1hp acc.,Safe-op rate (unseen 1hp),Silent failure (unseen 1hp),Downtime (1hp),Downtime (2hp),False-fallback (2hp),"Zone D: running (31c, A/B)","Capacity just below C/D (31c, A/B)"
+NN only (no fallback),100.0%,0.0%,100.0%,0.0%,0.0%,—,100.0% / 100.0%,100.0% / 100.0%
+Hard stop on uncertainty,100.0%,100.0%,0.0%,61.5%,42.0%,25.4%,0.0% / 0.0%,55.5% / 48.1%
+Graceful (Simplex switch),100.0%,100.0%,0.0%,0.0%,0.0%,25.4%,0.0% / 0.0%,58.1% / 52.8%
+Graceful + physics envelope (final),100.0%,100.0%,0.0%,0.0%,0.0%,25.4%,0.0% / 0.0%,7.0% / 9.2%

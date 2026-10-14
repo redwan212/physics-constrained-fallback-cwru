@@ -1,0 +1,49 @@
+{
+  "members": [
+    42,
+    7,
+    123,
+    2024,
+    31337
+  ],
+  "metrics": {
+    "test_accuracy": 1.0,
+    "accuracy_2hp": 1.0,
+    "tau_confidence": 0.999893519672122,
+    "tau_logit_margin": 9.8030519547858,
+    "flag_known1_conf": 0.0375,
+    "flag_unseen1_conf": 0.9788135593220338,
+    "flag_known1_margin": 0.0625,
+    "flag_unseen1_margin": 0.9682203389830508,
+    "flag_known2_margin": 0.3018753781004235,
+    "flag_unseen2_margin": 1.0,
+    "auroc_unseen_margin": 0.9927833686440678,
+    "auroc_control_margin": 0.7366303690260133,
+    "control_position": 0.26429281511906405,
+    "k5_flag_known1": 0.0,
+    "k5_flag_unseen1": 1.0,
+    "k5_flag_known2": 0.30215384615384616,
+    "flag_IR021_margin": 1.0,
+    "k5_flag_IR021": 1.0,
+    "flag_B021_margin": 0.9364406779661016,
+    "k5_flag_B021": 1.0,
+    "silent_nn_only_1hp": 0.6137566137566137,
+    "silent_final_1hp": 0.0,
+    "silent_final_unseen1": 0.0,
+    "downtime_hardstop_1hp": 0.6137566137566137,
+    "downtime_hardstop_2hp": 0.4574162679425837,
+    "downtime_final_1hp": 0.0,
+    "downtime_final_2hp": 0.0,
+    "false_fallback_2hp": 0.23492822966507176,
+    "false_fallback_known2_final": 0.30215384615384616,
+    "safe_operation_final_1hp": 1.0,
+    "safe_op_unseen1_final": 1.0,
+    "safe_op_unseen1_nn_only": 0.0
+  },
+  "details": {
+    "IR021 predicted as": "B014 (100%)",
+    "IR021 missed windows called": "\u2014",
+    "B021 predicted as": "B007 (94%)",
+    "B021 missed windows called": "B007 (100%)"
+  }
+}

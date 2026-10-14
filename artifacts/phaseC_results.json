@@ -1,0 +1,185 @@
+{
+  "final_policy": "Graceful + physics envelope (final)",
+  "validation_split": "blocked (train 0-70%, val 70-80%, test 80-100%)",
+  "zone_preset": "ISO 10816-1 Class I (<=15 kW)",
+  "scaling_mode": "none",
+  "scale": 1.0,
+  "boundaries_mm_s": {
+    "A/B": 0.71,
+    "B/C": 1.8,
+    "C/D": 4.5
+  },
+  "velocity_band_hz": [
+    10.0,
+    1000.0
+  ],
+  "accel_unit": "g (assumed)",
+  "physics_window_s": 1.0,
+  "trigger": {
+    "score": "logit_margin",
+    "K": 5,
+    "tau": 9.141092033602776
+  },
+  "velocity_rms_1hp": {
+    "Normal": 0.1778,
+    "IR007": 0.209,
+    "IR014": 0.1383,
+    "IR021": 0.2908,
+    "OR007": 0.1683,
+    "OR014": 0.1428,
+    "B007": 0.1402,
+    "B014": 0.2144,
+    "B021": 0.1396
+  },
+  "velocity_rms_2hp": {
+    "Normal": 0.1658,
+    "IR007": 0.2242,
+    "IR014": 0.1344,
+    "IR021": 0.2932,
+    "OR007": 0.163,
+    "OR014": 0.145,
+    "B007": 0.1271,
+    "B014": 0.2177,
+    "B021": 0.145
+  },
+  "policies_1hp_all": {
+    "NN only (no fallback)": {
+      "availability": 1.0,
+      "downtime": 0.0,
+      "unsafe_operation": 0.0,
+      "unnecessary_stop": 0.0,
+      "silent_failure": 0.6138,
+      "false_fallback": 0.0,
+      "safe_operation": 0.3862
+    },
+    "Hard stop on uncertainty": {
+      "availability": 0.3849,
+      "downtime": 0.6151,
+      "unsafe_operation": 0.0,
+      "unnecessary_stop": 0.6151,
+      "silent_failure": 0.0,
+      "false_fallback": 0.0013,
+      "safe_operation": 1.0
+    },
+    "Graceful (Simplex switch)": {
+      "availability": 1.0,
+      "downtime": 0.0,
+      "unsafe_operation": 0.0,
+      "unnecessary_stop": 0.0,
+      "silent_failure": 0.0,
+      "false_fallback": 0.0013,
+      "safe_operation": 1.0
+    },
+    "Graceful + physics envelope (final)": {
+      "availability": 1.0,
+      "downtime": 0.0,
+      "unsafe_operation": 0.0,
+      "unnecessary_stop": 0.0,
+      "silent_failure": 0.0,
+      "false_fallback": 0.0013,
+      "safe_operation": 1.0
+    }
+  },
+  "policies_2hp_all": {
+    "NN only (no fallback)": {
+      "availability": 1.0,
+      "downtime": 0.0,
+      "unsafe_operation": 0.0,
+      "unnecessary_stop": 0.0,
+      "silent_failure": 0.2225,
+      "false_fallback": 0.0,
+      "safe_operation": 0.7775
+    },
+    "Hard stop on uncertainty": {
+      "availability": 0.5799,
+      "downtime": 0.4201,
+      "unsafe_operation": 0.0,
+      "unnecessary_stop": 0.4201,
+      "silent_failure": 0.0,
+      "false_fallback": 0.1976,
+      "safe_operation": 1.0
+    },
+    "Graceful (Simplex switch)": {
+      "availability": 1.0,
+      "downtime": 0.0,
+      "unsafe_operation": 0.0,
+      "unnecessary_stop": 0.0,
+      "silent_failure": 0.0,
+      "false_fallback": 0.1976,
+      "safe_operation": 1.0
+    },
+    "Graceful + physics envelope (final)": {
+      "availability": 1.0,
+      "downtime": 0.0,
+      "unsafe_operation": 0.0,
+      "unnecessary_stop": 0.0,
+      "silent_failure": 0.0,
+      "false_fallback": 0.1976,
+      "safe_operation": 1.0
+    }
+  },
+  "sensitivity_checks_share": {
+    "graceful availability >= hard stop": 1.0,
+    "graceful safe_operation >= NN only": 1.0,
+    "graceful silent failures <= NN only": 1.0,
+    "graceful unsafe = 0": 1.0
+  },
+  "fault_injection": {
+    "A: amplitude gain | NN only (no fallback)": {
+      "running in Zone D": 1.0,
+      "stopped outside Zone D": 0.0,
+      "mean capacity in Zone C": 1.0,
+      "capacity just below C/D": 1.0,
+      "steps just below C/D": 119.0
+    },
+    "A: amplitude gain | Hard stop on uncertainty": {
+      "running in Zone D": 0.0,
+      "stopped outside Zone D": 0.34601449275362317,
+      "mean capacity in Zone C": 0.6593516209476309,
+      "capacity just below C/D": 0.5546218487394958,
+      "steps just below C/D": 119.0
+    },
+    "A: amplitude gain | Graceful (Simplex switch)": {
+      "running in Zone D": 0.0,
+      "stopped outside Zone D": 0.0,
+      "mean capacity in Zone C": 0.8351702145516118,
+      "capacity just below C/D": 0.5806904078102416,
+      "steps just below C/D": 119.0
+    },
+    "A: amplitude gain | Graceful + physics envelope (final)": {
+      "running in Zone D": 0.0,
+      "stopped outside Zone D": 0.0,
+      "mean capacity in Zone C": 0.5321616913183848,
+      "capacity just below C/D": 0.07032237614121158,
+      "steps just below C/D": 119.0
+    },
+    "B: unbalance at 1x | NN only (no fallback)": {
+      "running in Zone D": 1.0,
+      "stopped outside Zone D": 0.0,
+      "mean capacity in Zone C": 1.0,
+      "capacity just below C/D": 1.0,
+      "steps just below C/D": 52.0
+    },
+    "B: unbalance at 1x | Hard stop on uncertainty": {
+      "running in Zone D": 0.0,
+      "stopped outside Zone D": 0.531415343915344,
+      "mean capacity in Zone C": 0.37896825396825395,
+      "capacity just below C/D": 0.4807692307692308,
+      "steps just below C/D": 52.0
+    },
+    "B: unbalance at 1x | Graceful (Simplex switch)": {
+      "running in Zone D": 0.0,
+      "stopped outside Zone D": 0.0,
+      "mean capacity in Zone C": 0.7016611421313271,
+      "capacity just below C/D": 0.527756341625161,
+      "steps just below C/D": 52.0
+    },
+    "B: unbalance at 1x | Graceful + physics envelope (final)": {
+      "running in Zone D": 0.0,
+      "stopped outside Zone D": 0.0,
+      "mean capacity in Zone C": 0.5479264289511102,
+      "capacity just below C/D": 0.09245600677433147,
+      "steps just below C/D": 52.0
+    }
+  }
+}

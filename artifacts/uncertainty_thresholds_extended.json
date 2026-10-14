@@ -1,0 +1,22 @@
+{
+  "tau": {
+    "confidence": 0.9998024773638196,
+    "logit_margin": 9.141092033602776,
+    "log_residual": 8.529692191793611
+  },
+  "threshold_rule": "score < tau -> uncertain; tau = 5% quantile of known validation scores",
+  "accuracy_known_2hp": 1.0,
+  "flag_rates_logit_margin": {
+    "Known 1hp (test)": 0.05625,
+    "Unseen 1hp": 0.9809322033898306,
+    "Known 2hp (control)": 0.278886872353297,
+    "Unseen 2hp": 1.0
+  },
+  "flag_rates_confidence": {
+    "Known 1hp (test)": 0.059375,
+    "Unseen 1hp": 0.9872881355932204,
+    "Known 2hp (control)": 0.2734422262552934,
+    "Unseen 2hp": 1.0
+  },
+  "control_position_0known_1unseen": 0.24077123095602287
+}

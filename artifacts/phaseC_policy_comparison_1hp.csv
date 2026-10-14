@@ -1,0 +1,13 @@
+group,policy,availability,downtime,unsafe_operation,unnecessary_stop,silent_failure,false_fallback,safe_operation
+Known 1hp (test),NN only (no fallback),1.0,0.0,0.0,0.0,0.0,0.0,1.0
+Known 1hp (test),Hard stop on uncertainty,0.9965753424657534,0.003424657534246575,0.0,0.003424657534246575,0.0,0.003424657534246575,1.0
+Known 1hp (test),Graceful (Simplex switch),1.0,0.0,0.0,0.0,0.0,0.003424657534246575,1.0
+Known 1hp (test),Graceful + physics envelope (final),1.0,0.0,0.0,0.0,0.0,0.003424657534246575,1.0
+Unseen 1hp,NN only (no fallback),1.0,0.0,0.0,0.0,1.0,0.0,0.0
+Unseen 1hp,Hard stop on uncertainty,0.0,1.0,0.0,1.0,0.0,0.0,1.0
+Unseen 1hp,Graceful (Simplex switch),1.0,0.0,0.0,0.0,0.0,0.0,1.0
+Unseen 1hp,Graceful + physics envelope (final),1.0,0.0,0.0,0.0,0.0,0.0,1.0
+All,NN only (no fallback),1.0,0.0,0.0,0.0,0.6137566137566137,0.0,0.3862433862433862
+All,Hard stop on uncertainty,0.38492063492063494,0.6150793650793651,0.0,0.6150793650793651,0.0,0.0013227513227513227,1.0
+All,Graceful (Simplex switch),1.0,0.0,0.0,0.0,0.0,0.0013227513227513227,1.0
+All,Graceful + physics envelope (final),1.0,0.0,0.0,0.0,0.0,0.0013227513227513227,1.0

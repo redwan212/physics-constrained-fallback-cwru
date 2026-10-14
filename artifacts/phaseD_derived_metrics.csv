@@ -1,0 +1,12 @@
+key,value,how
+rf_accuracy,1.0,Step 14 Random Forest test accuracy
+n_test_windows,320.0,Step 19
+test_acc_ci_low,0.9885384416119251,"Clopper-Pearson 95% lower bound, Step 19"
+flag_known1_conf,0.059375,"Step 27, confidence < tau_conf"
+flag_unseen1_conf,0.9872881355932204,"Step 27, confidence < tau_conf"
+flag_known1_margin_ci_low,0.03367438019358644,"Clopper-Pearson 95%, B+.4"
+flag_known1_margin_ci_high,0.08744441799640322,"Clopper-Pearson 95%, B+.4"
+flag_unseen1_margin_ci_low,0.9641129768918489,"Clopper-Pearson 95%, B+.4"
+flag_unseen1_margin_ci_high,0.9912448305070539,"Clopper-Pearson 95%, B+.4"
+n_unseen_windows,472.0,B+.4
+n_windows_per_known_test_class,45.714285714285715,Step 13

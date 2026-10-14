@@ -1,0 +1,153 @@
+key,value,source_file,locator,note,re-read,match
+test_accuracy,1.0,uncertainty_thresholds.json,test_accuracy_known,,1.0,True
+ms_mean_test_accuracy,1.0,multiseed_summary.json,mean > test_accuracy,,1.0,True
+ms_std_test_accuracy,0.0,multiseed_summary.json,std > test_accuracy,,0.0,True
+ens_test_accuracy,1.0,ensemble_results.json,metrics > test_accuracy,,1.0,True
+safe_op_unseen1_final,1.0,phaseC_policy_comparison_1hp.csv,"{'group': 'Unseen 1hp', 'policy': 'Graceful + physics envelope (final)'} [safe_operation]",,1.0,True
+ms_mean_safe_op_unseen1_final,0.915086,multiseed_summary.json,mean > safe_op_unseen1_final,,0.915086,True
+ms_std_safe_op_unseen1_final,0.153014,multiseed_summary.json,std > safe_op_unseen1_final,,0.153014,True
+ens_safe_op_unseen1_final,1.0,ensemble_results.json,metrics > safe_op_unseen1_final,,1.0,True
+safe_op_unseen1_nn,0.0,phaseC_policy_comparison_1hp.csv,"{'group': 'Unseen 1hp', 'policy': 'NN only (no fallback)'} [safe_operation]",,0.0,True
+ms_mean_safe_op_unseen1_nn_only,0.0,multiseed_summary.json,mean > safe_op_unseen1_nn_only,,0.0,True
+ms_std_safe_op_unseen1_nn_only,0.0,multiseed_summary.json,std > safe_op_unseen1_nn_only,,0.0,True
+ens_safe_op_unseen1_nn_only,0.0,ensemble_results.json,metrics > safe_op_unseen1_nn_only,,0.0,True
+downtime_hard_1hp,0.6150793650793651,phaseC_policy_comparison_1hp.csv,"{'group': 'All', 'policy': 'Hard stop on uncertainty'} [downtime]",,0.6150793650793651,True
+downtime_hard_2hp,0.4200956937799043,phaseC_policy_comparison_2hp.csv,"{'group': 'All', 'policy': 'Hard stop on uncertainty'} [downtime]",,0.4200956937799043,True
+ms_mean_downtime_hardstop_1hp,0.562698,multiseed_summary.json,mean > downtime_hardstop_1hp,,0.562698,True
+ms_std_downtime_hardstop_1hp,0.093067,multiseed_summary.json,std > downtime_hardstop_1hp,,0.093067,True
+ms_mean_downtime_hardstop_2hp,0.3311,multiseed_summary.json,mean > downtime_hardstop_2hp,,0.3311,True
+ms_std_downtime_hardstop_2hp,0.069982,multiseed_summary.json,std > downtime_hardstop_2hp,,0.069982,True
+ens_downtime_hardstop_1hp,0.6137566137566137,ensemble_results.json,metrics > downtime_hardstop_1hp,,0.6137566137566137,True
+ens_downtime_hardstop_2hp,0.4574162679425837,ensemble_results.json,metrics > downtime_hardstop_2hp,,0.4574162679425837,True
+downtime_final_1hp,0.0,phaseC_policy_comparison_1hp.csv,"{'group': 'All', 'policy': 'Graceful + physics envelope (final)'} [downtime]",,0.0,True
+downtime_final_2hp,0.0,phaseC_policy_comparison_2hp.csv,"{'group': 'All', 'policy': 'Graceful + physics envelope (final)'} [downtime]",,0.0,True
+ms_mean_downtime_final_1hp,0.0,multiseed_summary.json,mean > downtime_final_1hp,,0.0,True
+ms_std_downtime_final_1hp,0.0,multiseed_summary.json,std > downtime_final_1hp,,0.0,True
+ms_mean_downtime_final_2hp,0.0,multiseed_summary.json,mean > downtime_final_2hp,,0.0,True
+ms_std_downtime_final_2hp,0.0,multiseed_summary.json,std > downtime_final_2hp,,0.0,True
+ens_downtime_final_1hp,0.0,ensemble_results.json,metrics > downtime_final_1hp,,0.0,True
+ens_downtime_final_2hp,0.0,ensemble_results.json,metrics > downtime_final_2hp,,0.0,True
+false_fb_known2,0.2541538461538462,phaseC_policy_comparison_2hp.csv,"{'group': 'Known 2hp (control)', 'policy': 'Graceful + physics envelope (final)'} [false_fallback]",,0.2541538461538462,True
+ms_mean_false_fallback_known2_final,0.141046,multiseed_summary.json,mean > false_fallback_known2_final,,0.141046,True
+ms_std_false_fallback_known2_final,0.088401,multiseed_summary.json,std > false_fallback_known2_final,,0.088401,True
+ens_false_fallback_known2_final,0.30215384615384616,ensemble_results.json,metrics > false_fallback_known2_final,,0.30215384615384616,True
+test_accuracy_d3,1.0,uncertainty_thresholds.json,test_accuracy_known,,1.0,True
+safeop_unseen1|NN only (no fallback),0.0,phaseC_policy_comparison_1hp.csv,"{'group': 'Unseen 1hp', 'policy': 'NN only (no fallback)'} [safe_operation]",,0.0,True
+silent_unseen1|NN only (no fallback),1.0,phaseC_policy_comparison_1hp.csv,"{'group': 'Unseen 1hp', 'policy': 'NN only (no fallback)'} [silent_failure]",,1.0,True
+downtime1|NN only (no fallback),0.0,phaseC_policy_comparison_1hp.csv,"{'group': 'All', 'policy': 'NN only (no fallback)'} [downtime]",,0.0,True
+downtime2|NN only (no fallback),0.0,phaseC_policy_comparison_2hp.csv,"{'group': 'All', 'policy': 'NN only (no fallback)'} [downtime]",,0.0,True
+inj_run_A|NN only (no fallback),1.0,phaseC_fault_injection_summary.csv,"{'scenario': 'A: amplitude gain', 'policy': 'NN only (no fallback)'} [running in Zone D]",,1.0,True
+inj_run_B|NN only (no fallback),1.0,phaseC_fault_injection_summary.csv,"{'scenario': 'B: unbalance at 1x', 'policy': 'NN only (no fallback)'} [running in Zone D]",,1.0,True
+inj_near_A|NN only (no fallback),1.0,phaseC_fault_injection_summary.csv,"{'scenario': 'A: amplitude gain', 'policy': 'NN only (no fallback)'} [capacity just below C/D]",,1.0,True
+inj_near_B|NN only (no fallback),1.0,phaseC_fault_injection_summary.csv,"{'scenario': 'B: unbalance at 1x', 'policy': 'NN only (no fallback)'} [capacity just below C/D]",,1.0,True
+safeop_unseen1|Hard stop on uncertainty,1.0,phaseC_policy_comparison_1hp.csv,"{'group': 'Unseen 1hp', 'policy': 'Hard stop on uncertainty'} [safe_operation]",,1.0,True
+silent_unseen1|Hard stop on uncertainty,0.0,phaseC_policy_comparison_1hp.csv,"{'group': 'Unseen 1hp', 'policy': 'Hard stop on uncertainty'} [silent_failure]",,0.0,True
+downtime1|Hard stop on uncertainty,0.6150793650793651,phaseC_policy_comparison_1hp.csv,"{'group': 'All', 'policy': 'Hard stop on uncertainty'} [downtime]",,0.6150793650793651,True
+downtime2|Hard stop on uncertainty,0.4200956937799043,phaseC_policy_comparison_2hp.csv,"{'group': 'All', 'policy': 'Hard stop on uncertainty'} [downtime]",,0.4200956937799043,True
+falsefb2|Hard stop on uncertainty,0.2541538461538462,phaseC_policy_comparison_2hp.csv,"{'group': 'Known 2hp (control)', 'policy': 'Hard stop on uncertainty'} [false_fallback]",,0.2541538461538462,True
+inj_run_A|Hard stop on uncertainty,0.0,phaseC_fault_injection_summary.csv,"{'scenario': 'A: amplitude gain', 'policy': 'Hard stop on uncertainty'} [running in Zone D]",,0.0,True
+inj_run_B|Hard stop on uncertainty,0.0,phaseC_fault_injection_summary.csv,"{'scenario': 'B: unbalance at 1x', 'policy': 'Hard stop on uncertainty'} [running in Zone D]",,0.0,True
+inj_near_A|Hard stop on uncertainty,0.5546218487394958,phaseC_fault_injection_summary.csv,"{'scenario': 'A: amplitude gain', 'policy': 'Hard stop on uncertainty'} [capacity just below C/D]",,0.5546218487394958,True
+inj_near_B|Hard stop on uncertainty,0.4807692307692308,phaseC_fault_injection_summary.csv,"{'scenario': 'B: unbalance at 1x', 'policy': 'Hard stop on uncertainty'} [capacity just below C/D]",,0.4807692307692308,True
+safeop_unseen1|Graceful (Simplex switch),1.0,phaseC_policy_comparison_1hp.csv,"{'group': 'Unseen 1hp', 'policy': 'Graceful (Simplex switch)'} [safe_operation]",,1.0,True
+silent_unseen1|Graceful (Simplex switch),0.0,phaseC_policy_comparison_1hp.csv,"{'group': 'Unseen 1hp', 'policy': 'Graceful (Simplex switch)'} [silent_failure]",,0.0,True
+downtime1|Graceful (Simplex switch),0.0,phaseC_policy_comparison_1hp.csv,"{'group': 'All', 'policy': 'Graceful (Simplex switch)'} [downtime]",,0.0,True
+downtime2|Graceful (Simplex switch),0.0,phaseC_policy_comparison_2hp.csv,"{'group': 'All', 'policy': 'Graceful (Simplex switch)'} [downtime]",,0.0,True
+falsefb2|Graceful (Simplex switch),0.2541538461538462,phaseC_policy_comparison_2hp.csv,"{'group': 'Known 2hp (control)', 'policy': 'Graceful (Simplex switch)'} [false_fallback]",,0.2541538461538462,True
+inj_run_A|Graceful (Simplex switch),0.0,phaseC_fault_injection_summary.csv,"{'scenario': 'A: amplitude gain', 'policy': 'Graceful (Simplex switch)'} [running in Zone D]",,0.0,True
+inj_run_B|Graceful (Simplex switch),0.0,phaseC_fault_injection_summary.csv,"{'scenario': 'B: unbalance at 1x', 'policy': 'Graceful (Simplex switch)'} [running in Zone D]",,0.0,True
+inj_near_A|Graceful (Simplex switch),0.5806904078102416,phaseC_fault_injection_summary.csv,"{'scenario': 'A: amplitude gain', 'policy': 'Graceful (Simplex switch)'} [capacity just below C/D]",,0.5806904078102416,True
+inj_near_B|Graceful (Simplex switch),0.527756341625161,phaseC_fault_injection_summary.csv,"{'scenario': 'B: unbalance at 1x', 'policy': 'Graceful (Simplex switch)'} [capacity just below C/D]",,0.527756341625161,True
+safeop_unseen1|Graceful + physics envelope (final),1.0,phaseC_policy_comparison_1hp.csv,"{'group': 'Unseen 1hp', 'policy': 'Graceful + physics envelope (final)'} [safe_operation]",,1.0,True
+silent_unseen1|Graceful + physics envelope (final),0.0,phaseC_policy_comparison_1hp.csv,"{'group': 'Unseen 1hp', 'policy': 'Graceful + physics envelope (final)'} [silent_failure]",,0.0,True
+downtime1|Graceful + physics envelope (final),0.0,phaseC_policy_comparison_1hp.csv,"{'group': 'All', 'policy': 'Graceful + physics envelope (final)'} [downtime]",,0.0,True
+downtime2|Graceful + physics envelope (final),0.0,phaseC_policy_comparison_2hp.csv,"{'group': 'All', 'policy': 'Graceful + physics envelope (final)'} [downtime]",,0.0,True
+falsefb2|Graceful + physics envelope (final),0.2541538461538462,phaseC_policy_comparison_2hp.csv,"{'group': 'Known 2hp (control)', 'policy': 'Graceful + physics envelope (final)'} [false_fallback]",,0.2541538461538462,True
+inj_run_A|Graceful + physics envelope (final),0.0,phaseC_fault_injection_summary.csv,"{'scenario': 'A: amplitude gain', 'policy': 'Graceful + physics envelope (final)'} [running in Zone D]",,0.0,True
+inj_run_B|Graceful + physics envelope (final),0.0,phaseC_fault_injection_summary.csv,"{'scenario': 'B: unbalance at 1x', 'policy': 'Graceful + physics envelope (final)'} [running in Zone D]",,0.0,True
+inj_near_A|Graceful + physics envelope (final),0.0703223761412115,phaseC_fault_injection_summary.csv,"{'scenario': 'A: amplitude gain', 'policy': 'Graceful + physics envelope (final)'} [capacity just below C/D]",,0.0703223761412115,True
+inj_near_B|Graceful + physics envelope (final),0.0924560067743314,phaseC_fault_injection_summary.csv,"{'scenario': 'B: unbalance at 1x', 'policy': 'Graceful + physics envelope (final)'} [capacity just below C/D]",,0.0924560067743314,True
+acc,1.0,uncertainty_thresholds.json,test_accuracy_known,,1.0,True
+test_acc_ci_low,0.9885384416119252,phaseD_derived_metrics.csv,{'key': 'test_acc_ci_low'} [value],,0.9885384416119252,True
+n_test_windows,320.0,phaseD_derived_metrics.csv,{'key': 'n_test_windows'} [value],,320.0,True
+rf_accuracy,1.0,phaseD_derived_metrics.csv,{'key': 'rf_accuracy'} [value],,1.0,True
+acc2,1.0,uncertainty_thresholds_extended.json,accuracy_known_2hp,,1.0,True
+conf_known,0.99992925,uncertainty_summary.csv,{'set': 'Known test'} [conf_mean],,0.99992925,True
+conf_unseen,0.81861836,uncertainty_summary.csv,{'set': 'Unseen (all)'} [conf_mean],,0.81861836,True
+auroc_conf,0.9940876588983051,uncertainty_thresholds.json,auroc_confidence,,0.9940876588983051,True
+tau_conf,0.9998025298118591,uncertainty_thresholds.json,tau_confidence,,0.9998025298118591,True
+flag_known1_conf,0.059375,phaseD_derived_metrics.csv,{'key': 'flag_known1_conf'} [value],,0.059375,True
+flag_unseen1_conf,0.9872881355932204,phaseD_derived_metrics.csv,{'key': 'flag_unseen1_conf'} [value],,0.9872881355932204,True
+tau_margin,9.141092033602776,uncertainty_thresholds_extended.json,tau > logit_margin,,9.141092033602776,True
+fk_m,0.05625,uncertainty_thresholds_extended.json,flag_rates_logit_margin > Known 1hp (test),,0.05625,True
+fu_m,0.9809322033898306,uncertainty_thresholds_extended.json,flag_rates_logit_margin > Unseen 1hp,,0.9809322033898306,True
+fk2_m,0.278886872353297,uncertainty_thresholds_extended.json,flag_rates_logit_margin > Known 2hp (control),,0.278886872353297,True
+fu2_m,1.0,uncertainty_thresholds_extended.json,flag_rates_logit_margin > Unseen 2hp,,1.0,True
+auroc_m_unseen,0.9905918961864408,extended_score_comparison.csv,"{'score': 'logit_margin', 'set': 'Unseen 1hp'} [AUROC_vs_known_test]",,0.9905918961864408,True
+auroc_m_ctrl,0.6764651391409557,extended_score_comparison.csv,"{'score': 'logit_margin', 'set': 'Known 2hp (control)'} [AUROC_vs_known_test]",,0.6764651391409557,True
+control_position,0.24077123095602287,uncertainty_thresholds_extended.json,control_position_0known_1unseen,,0.24077123095602287,True
+mw_margin_K1_k,0.05625,multiwindow_aggregation.csv,"{'score': 'logit_margin', 'set': 'Known 1hp (test)', 'K': 1} [flag_rate_mean]",,0.05625,True
+mw_margin_K1_u,0.9809322033898306,multiwindow_aggregation.csv,"{'score': 'logit_margin', 'set': 'Unseen 1hp', 'K': 1} [flag_rate_mean]",,0.9809322033898306,True
+mw_margin_K1_k2,0.278886872353297,multiwindow_aggregation.csv,"{'score': 'logit_margin', 'set': 'Known 2hp (control)', 'K': 1} [flag_rate_mean]",,0.278886872353297,True
+mw_margin_K5_k,0.0034246575342465,multiwindow_aggregation.csv,"{'score': 'logit_margin', 'set': 'Known 1hp (test)', 'K': 5} [flag_rate_mean]",,0.0034246575342465,True
+mw_margin_K5_u,1.0,multiwindow_aggregation.csv,"{'score': 'logit_margin', 'set': 'Unseen 1hp', 'K': 5} [flag_rate_mean]",,1.0,True
+mw_margin_K5_k2,0.2541538461538462,multiwindow_aggregation.csv,"{'score': 'logit_margin', 'set': 'Known 2hp (control)', 'K': 5} [flag_rate_mean]",,0.2541538461538462,True
+mw_margin_K20_k,0.0,multiwindow_aggregation.csv,"{'score': 'logit_margin', 'set': 'Known 1hp (test)', 'K': 20} [flag_rate_mean]",,0.0,True
+mw_margin_K20_u,1.0,multiwindow_aggregation.csv,"{'score': 'logit_margin', 'set': 'Unseen 1hp', 'K': 20} [flag_rate_mean]",,1.0,True
+mw_margin_K20_k2,0.2309210526315789,multiwindow_aggregation.csv,"{'score': 'logit_margin', 'set': 'Known 2hp (control)', 'K': 20} [flag_rate_mean]",,0.2309210526315789,True
+mw_conf_K5_k2,0.3981538461538461,multiwindow_aggregation.csv,"{'score': 'confidence', 'set': 'Known 2hp (control)', 'K': 5} [flag_rate_mean]",,0.3981538461538461,True
+mw_conf_K1_k2,0.2734422262552934,multiwindow_aggregation.csv,"{'score': 'confidence', 'set': 'Known 2hp (control)', 'K': 1} [flag_rate_mean]",,0.2734422262552934,True
+flag_known1_margin_ci_low,0.0336743801935864,phaseD_derived_metrics.csv,{'key': 'flag_known1_margin_ci_low'} [value],,0.0336743801935864,True
+flag_known1_margin_ci_high,0.0874444179964032,phaseD_derived_metrics.csv,{'key': 'flag_known1_margin_ci_high'} [value],,0.0874444179964032,True
+flag_unseen1_margin_ci_low,0.9641129768918488,phaseD_derived_metrics.csv,{'key': 'flag_unseen1_margin_ci_low'} [value],,0.9641129768918488,True
+flag_unseen1_margin_ci_high,0.991244830507054,phaseD_derived_metrics.csv,{'key': 'flag_unseen1_margin_ci_high'} [value],,0.991244830507054,True
+v_min,0.1382838743340722,phaseC_velocity_rms_1hp.csv,{'class': 'IR014'} [v_rms_iso],,0.1382838743340722,True
+v_max,0.2907531387491269,phaseC_velocity_rms_1hp.csv,{'class': 'IR021'} [v_rms_iso],,0.2907531387491269,True
+bound_A/B,0.71,phaseC_results.json,boundaries_mm_s > A/B,,0.71,True
+bound_B/C,1.8,phaseC_results.json,boundaries_mm_s > B/C,,1.8,True
+bound_C/D,4.5,phaseC_results.json,boundaries_mm_s > C/D,,4.5,True
+sil_nn_u1,1.0,phaseC_policy_comparison_1hp.csv,"{'group': 'Unseen 1hp', 'policy': 'NN only (no fallback)'} [silent_failure]",,1.0,True
+sil_fi_u1,0.0,phaseC_policy_comparison_1hp.csv,"{'group': 'Unseen 1hp', 'policy': 'Graceful + physics envelope (final)'} [silent_failure]",,0.0,True
+dt_h1,0.6150793650793651,phaseC_policy_comparison_1hp.csv,"{'group': 'All', 'policy': 'Hard stop on uncertainty'} [downtime]",,0.6150793650793651,True
+dt_h2,0.4200956937799043,phaseC_policy_comparison_2hp.csv,"{'group': 'All', 'policy': 'Hard stop on uncertainty'} [downtime]",,0.4200956937799043,True
+dt_f1,0.0,phaseC_policy_comparison_1hp.csv,"{'group': 'All', 'policy': 'Graceful + physics envelope (final)'} [downtime]",,0.0,True
+dt_f2,0.0,phaseC_policy_comparison_2hp.csv,"{'group': 'All', 'policy': 'Graceful + physics envelope (final)'} [downtime]",,0.0,True
+ff_k2,0.2541538461538462,phaseC_policy_comparison_2hp.csv,"{'group': 'Known 2hp (control)', 'policy': 'Graceful + physics envelope (final)'} [false_fallback]",,0.2541538461538462,True
+av_f2,1.0,phaseC_policy_comparison_2hp.csv,"{'group': 'Known 2hp (control)', 'policy': 'Graceful + physics envelope (final)'} [availability]",,1.0,True
+inj_nn_A,1.0,phaseC_fault_injection_summary.csv,"{'scenario': 'A: amplitude gain', 'policy': 'NN only (no fallback)'} [running in Zone D]",,1.0,True
+inj_fi_A,0.0,phaseC_fault_injection_summary.csv,"{'scenario': 'A: amplitude gain', 'policy': 'Graceful + physics envelope (final)'} [running in Zone D]",,0.0,True
+inj_hs_out_A,0.3460144927536231,phaseC_fault_injection_summary.csv,"{'scenario': 'A: amplitude gain', 'policy': 'Hard stop on uncertainty'} [stopped outside Zone D]",,0.3460144927536231,True
+inj_fi_out_A,0.0,phaseC_fault_injection_summary.csv,"{'scenario': 'A: amplitude gain', 'policy': 'Graceful + physics envelope (final)'} [stopped outside Zone D]",,0.0,True
+near_sx_A,0.5806904078102416,phaseC_fault_injection_summary.csv,"{'scenario': 'A: amplitude gain', 'policy': 'Graceful (Simplex switch)'} [capacity just below C/D]",,0.5806904078102416,True
+near_fi_A,0.0703223761412115,phaseC_fault_injection_summary.csv,"{'scenario': 'A: amplitude gain', 'policy': 'Graceful + physics envelope (final)'} [capacity just below C/D]",,0.0703223761412115,True
+inj_nn_B,1.0,phaseC_fault_injection_summary.csv,"{'scenario': 'B: unbalance at 1x', 'policy': 'NN only (no fallback)'} [running in Zone D]",,1.0,True
+inj_fi_B,0.0,phaseC_fault_injection_summary.csv,"{'scenario': 'B: unbalance at 1x', 'policy': 'Graceful + physics envelope (final)'} [running in Zone D]",,0.0,True
+inj_hs_out_B,0.531415343915344,phaseC_fault_injection_summary.csv,"{'scenario': 'B: unbalance at 1x', 'policy': 'Hard stop on uncertainty'} [stopped outside Zone D]",,0.531415343915344,True
+inj_fi_out_B,0.0,phaseC_fault_injection_summary.csv,"{'scenario': 'B: unbalance at 1x', 'policy': 'Graceful + physics envelope (final)'} [stopped outside Zone D]",,0.0,True
+near_sx_B,0.527756341625161,phaseC_fault_injection_summary.csv,"{'scenario': 'B: unbalance at 1x', 'policy': 'Graceful (Simplex switch)'} [capacity just below C/D]",,0.527756341625161,True
+near_fi_B,0.0924560067743314,phaseC_fault_injection_summary.csv,"{'scenario': 'B: unbalance at 1x', 'policy': 'Graceful + physics envelope (final)'} [capacity just below C/D]",,0.0924560067743314,True
+ms_mean_flag_known1_margin,0.045,multiseed_summary.json,mean > flag_known1_margin,,0.045,True
+ms_std_flag_known1_margin,0.012809,multiseed_summary.json,std > flag_known1_margin,,0.012809,True
+ms_mean_flag_unseen1_margin,0.879237,multiseed_summary.json,mean > flag_unseen1_margin,,0.879237,True
+ms_std_flag_unseen1_margin,0.127418,multiseed_summary.json,std > flag_unseen1_margin,,0.127418,True
+ms_mean_k5_flag_known1,0.00274,multiseed_summary.json,mean > k5_flag_known1,,0.00274,True
+ms_std_k5_flag_known1,0.002865,multiseed_summary.json,std > k5_flag_known1,,0.002865,True
+ms_mean_k5_flag_unseen1,0.915086,multiseed_summary.json,mean > k5_flag_unseen1,,0.915086,True
+ms_std_k5_flag_unseen1,0.153014,multiseed_summary.json,std > k5_flag_unseen1,,0.153014,True
+ms_mean_flag_known2_margin,0.201936,multiseed_summary.json,mean > flag_known2_margin,,0.201936,True
+ms_std_flag_known2_margin,0.055345,multiseed_summary.json,std > flag_known2_margin,,0.055345,True
+ms_mean_auroc_unseen_margin,0.962801,multiseed_summary.json,mean > auroc_unseen_margin,,0.962801,True
+ms_std_auroc_unseen_margin,0.052723,multiseed_summary.json,std > auroc_unseen_margin,,0.052723,True
+ms_mean_control_position,0.186398,multiseed_summary.json,mean > control_position,,0.186398,True
+ms_std_control_position,0.050682,multiseed_summary.json,std > control_position,,0.050682,True
+ms_mean_silent_final_1hp,0.052116,multiseed_summary.json,mean > silent_final_1hp,,0.052116,True
+ms_std_silent_final_1hp,0.093913,multiseed_summary.json,std > silent_final_1hp,,0.093913,True
+ms_unseen_min,0.6567796610169492,multiseed_results.csv,{'seed': 7} [flag_unseen1_margin],,0.6567796610169492,True
+ms_unseen_max,0.9809322033898306,multiseed_results.csv,{'seed': 42} [flag_unseen1_margin],,0.9809322033898306,True
+ens_flag_unseen1_margin,0.9682203389830508,ensemble_results.json,metrics > flag_unseen1_margin,,0.9682203389830508,True
+ens_flag_known1_margin,0.0625,ensemble_results.json,metrics > flag_known1_margin,,0.0625,True
+ens_k5_flag_unseen1,1.0,ensemble_results.json,metrics > k5_flag_unseen1,,1.0,True
+ens_flag_known2_margin,0.3018753781004235,ensemble_results.json,metrics > flag_known2_margin,,0.3018753781004235,True
+ens_silent_final_unseen1,0.0,ensemble_results.json,metrics > silent_final_unseen1,,0.0,True
+ens_auroc_unseen_margin,0.9927833686440678,ensemble_results.json,metrics > auroc_unseen_margin,,0.9927833686440678,True
+n_windows_per_known_test_class,45.71428571428572,phaseD_derived_metrics.csv,{'key': 'n_windows_per_known_test_class'} [value],,45.71428571428572,True

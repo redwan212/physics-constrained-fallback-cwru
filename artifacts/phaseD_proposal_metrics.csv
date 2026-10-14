@@ -1,0 +1,7 @@
+Proposal metric,Phase C equivalent,Main run,5 seeds (mean ± std),Ensemble,Source
+Known-fault classification accuracy,CNN test accuracy (known 1 hp),100.0%,100.0 ± 0.0%,100.0%,uncertainty_thresholds.json; multiseed_summary.json
+Safe-operation rate on unseen faults,"Safe operation, final design, unseen 1 hp",100.0%,91.5 ± 15.3%,100.0%,"phaseC_policy_comparison_1hp.csv (Unseen 1hp, final)"
+"  … same, without fallback","Safe operation, NN only, unseen 1 hp",0.0%,0.0 ± 0.0%,0.0%,"phaseC_policy_comparison_1hp.csv (Unseen 1hp, NN only)"
+Simulated downtime: hard stop (1 hp / 2 hp),"Downtime, hard stop on uncertainty",61.5% / 42.0%,56.3 ± 9.3% / 33.1 ± 7.0%,61.4% / 45.7%,"phaseC_policy_comparison_1hp.csv, phaseC_policy_comparison_2hp.csv (All)"
+Simulated downtime: final design (1 hp / 2 hp),"Downtime, graceful + physics envelope",0.0% / 0.0%,0.0 ± 0.0% / 0.0 ± 0.0%,0.0% / 0.0%,"phaseC_policy_comparison_1hp.csv, phaseC_policy_comparison_2hp.csv (All)"
+False fallback rate,"False fallback, final design, known 2 hp",25.4%,14.1 ± 8.8%,30.2%,"phaseC_policy_comparison_2hp.csv (Known 2hp, final)"

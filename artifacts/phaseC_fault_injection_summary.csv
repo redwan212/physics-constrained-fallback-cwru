@@ -1,0 +1,9 @@
+scenario,policy,running in Zone D,stopped outside Zone D,mean capacity in Zone C,capacity just below C/D,steps just below C/D
+A: amplitude gain,NN only (no fallback),1.0,0.0,1.0,1.0,119
+A: amplitude gain,Hard stop on uncertainty,0.0,0.34601449275362317,0.6593516209476309,0.5546218487394958,119
+A: amplitude gain,Graceful (Simplex switch),0.0,0.0,0.8351702145516118,0.5806904078102416,119
+A: amplitude gain,Graceful + physics envelope (final),0.0,0.0,0.5321616913183848,0.07032237614121158,119
+B: unbalance at 1x,NN only (no fallback),1.0,0.0,1.0,1.0,52
+B: unbalance at 1x,Hard stop on uncertainty,0.0,0.531415343915344,0.37896825396825395,0.4807692307692308,52
+B: unbalance at 1x,Graceful (Simplex switch),0.0,0.0,0.7016611421313271,0.527756341625161,52
+B: unbalance at 1x,Graceful + physics envelope (final),0.0,0.0,0.5479264289511102,0.09245600677433147,52

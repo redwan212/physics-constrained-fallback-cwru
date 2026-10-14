@@ -1,0 +1,21 @@
+
+# Raw CWRU data: downloaded by the notebook, not stored in the repo
+bearing_dataset/
+*.mat
+
+# Packaged outputs created by notebook cell D8
+bearing_project_outputs_*/
+bearing_project_outputs_*.zip
+
+# R / RStudio
+.Rhistory
+.RData
+.Rproj.user/
+Technical_Report_files/
+Technical_Report.html
+
+# Office lock files and OS files
+~$*
+.DS_Store
+Thumbs.db
+desktop.ini
